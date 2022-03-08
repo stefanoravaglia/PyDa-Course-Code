@@ -1,10 +1,15 @@
-import wolframalpha
+import wolframclient
+import wolframclient as wf
 
-input = raw_input("Q: ")
-app_id = "YOUR APP ID"
-client = wolframalpha.Client(app_id)
+q = input("Q: ")
+app_id = "243U9E-72PXGKHT38"
+client = wf
 
-res = client.query(input)
+#wolframalpha.Client(app_id)
+
+
+res = client.query(q)
 answer = next(res.results).text
 
-print answer
+print(answer)
+

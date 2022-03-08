@@ -2,7 +2,7 @@ import wikipedia
 import wolframalpha
 
 while True:
-    input = raw_input("Q: ")
+    input = input("Q: ")
 
     try:
         #wolframalpha

@@ -1,0 +1,35 @@
+conda install -c wolframresearch wolframclient
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: \
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+Examining defaults/win-64::python==3.9.7=h6244533_1:  60%|██████████████████▌            | 3/5 [00:00<00:00, 13.51it/s]-failed
+
+UnsatisfiableError: The following specifications were found
+to be incompatible with the existing python installation in your environment:
+
+Specifications:
+
+  - wolframclient -> python[version='>=3.7,<3.8.0a0']
+
+Your python: defaults/win-64::python==3.9.7=h6244533_1
+
+If python is on the left-most side of the chain, that's the version you've asked for.
+When python appears to the right, that indicates that the thing on the left is somehow
+not available for the python version you are constrained to. Note that conda will not
+change your python version to a different minor version unless you explicitly specify
+that.
+
+conda create -n devpy38 python=3.8 anaconda
+conda create -n devpy38 python=3.8 anaconda
+conda install -c wolframresearch wolframclient
+
+conda create -n wolf37 python[version='>=3.7,<3.8.0a0']
+
+APP NAME: pymathexp
+APPID: 243U9E-72PXGKHT38
+USAGE TYPE: Personal/Non-commercial Only
